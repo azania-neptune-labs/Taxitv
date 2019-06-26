@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: ;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay loop id="myVideo">
+  <source src="http://192.168.0.1/mmc2/TTV/Comedy/JALALS_SNAKE_PRANK%5BListenVid.com%5D.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+<div class="row">
+      
+        
+        
+        
+        <div class="col-xs-6 col-sm-3" id="thumb">
+          <a href="lifestyle.html" class="thumbnail" >
+            <img src="file:///C:/Users/Invotech/Documents/azania/wellttv-master/TTV/3.png" alt="London" />
+          </a>
+        </div>
+        
+       
+      </div>
+  <button id="myBtn" onclick="myFunction()">Play</button>
+ <button id="hide" onclick="hideFunction()">Hide </button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+};
+
+/*
+hide button
+*/
+
+function hideFunction(){
+  var t = document.getElementById("thumb");
+  if (t.style.display === "none") {
+    t.style.display = "block";
+  } else {
+    t.style.display = "none";
+  }
+}
+</script>
