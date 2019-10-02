@@ -3,7 +3,9 @@ import os
 
      #   PORT = 9000
 
-os.system("node serve.js")
+os.system("forever start server.js nohup")
+os.system(" authtoken 1RNC9uqE9DxrHqtyh90QCigtTru_6bEGQgZQLN4eSj1QZAVKq")
+os.system(" ngrok http -subdomain=skywalkerzulu 3000")
 
 #Handler = http.server.SimpleHTTPRequestHandler
 
