@@ -2,6 +2,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 <style>
 * {
   box-sizing: border-box;
@@ -24,7 +32,7 @@ body {
 .content {
   position: fixed;
   bottom: 0;
-  background: ;
+  /* background: ; */
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -35,11 +43,18 @@ body {
   font-size: 18px;
   padding: 10px;
   border: none;
-  background: #000;
-  color: #fff;
+  background: rgb(142, 141, 207);
+  color: rgb(15, 15, 15);
   cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
-
+#hide{
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
 #myBtn:hover {
   background: #ddd;
   color: black;
@@ -93,31 +108,113 @@ function makeCorsRequest() {
   xhr.send();
 }
 </script>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/grid.css">
 </head>
 <body>
-
-<video autoplay loop id="myVideo">
-  <source src="http://192.168.0.1/mmc2/TTV/Business/3%20Branding%20Secrets%20To%20Build%20An%20Empire.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-<div class="row">
-      
-        
-
-        
-        <div class="col-xs-6 col-sm-3" id="thumb">
-          <a href="Business.html" class="thumbnail" >
-            <img src="6.png" alt="London" />
-          </a>
-        </div>
-        
-       
+  <!-- <div>
+    <nav class="navbar">
+      <div class="navdiv">
+          <ul class="navList">
+             <a href="lifestyle.html">
+              <li class="list">Lifestyle</li>
+             </a>
+             <a href="Music.html">
+              <li class="list">Music</li>
+             </a>
+             <a href="Inspiraton.html">
+              <li class="list">inspiration</li>
+             </a>
+             <a href="Sport.html">
+              <li class="list">Sport</li>
+             </a>
+             <a href="Comedy.html">
+              <li class="list">Comedy</li>
+             </a>
+             <a href="Spiritual.html">
+              <li class="list">Spiritual</li>
+             </a>
+          </ul>
       </div>
+     </nav>
+  </div> -->
+
+  
+<div>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li>
+            <a class="navbar-brand" href="lifestyle.html">Lifestyle</a>
+          </li>
+            <li class="nav-item active">
+              <a class="navbar-brand" href="Music.html">Music <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="Sport.html">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" href="Spiritual.html">Spiritual</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="Inspiraton.html">Inspiration</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="Business.html">Business</a>
+              </li>
+            <li class="nav-item">
+              <a class="navbar-brand " href="Comedy.html" tabindex="-1" aria-disabled="false">Comedy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+<section class="section-meals">
+<div class="row">
+      <ul class="meals-showcase clearfix" >
+        <li>
+          <figure class="meal-photo" id="thumb">
+            <a href="Business.html" class="thumbnail" >
+              <img src="6.png" alt="London" width="300px" height="350px" />
+            </a>
+          </figure>
+        </li>
+        
+        <!-- <li>
+          <figure class="meal-photo" id="thumb">
+            <a href="inspiration.html" class="thumbnail" >
+              <img src="5.png" alt="London" width="100px" height="150px" />
+            </a>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="meal-photo" id="thumb">
+            <a href="Comedy.html" class="thumbnail" >
+              <img src="4.png" alt="London" width="300px" height="350px" />
+            </a>
+          </figure>
+        </li> -->
+
+        </ul>  
+  </div>
   <button id="myBtn" onclick="myFunction()">Play</button>
   <button id="hide" onclick="hideFunction()">Hide </button>
+</section>
 </div>
+ 
+   
+       <div id="left">
+        <video autoplay loop id="myVideo">
+          <source src="http://192.168.0.1/mmc2/TTV/Business/3%20Branding%20Secrets%20To%20Build%20An%20Empire.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+       </div>
+
 
 <script>
 var video = document.getElementById("myVideo");
@@ -145,4 +242,7 @@ function hideFunction(){
     t.style.display = "none";
   }
 }
+
 </script>
+</body>
+</html>
